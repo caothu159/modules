@@ -6,6 +6,9 @@ This module is useful for homelabs. Remember how DynDns used to dynamically upda
 		
 This should be setup as a scheduled task. I set mine for 5 minutes.
 
+### Install
+	wget "https://raw.githubusercontent.com/caothu159/modules/master/CloudFlareDynDns/CloudFlareDynDns.psm1" -UseBasicParsing -OutFile "$($Env:PSModulePath -split ';' | Select-Object -first 2 | Select-Object -Last 1)\CloudFlareDynDns.psm1"
+
 Examples
 -----
 	Update-CloudFlareDynamicDns -Token 1234567893feefc5f0q5000bfo0c38d90bbeb -Email example@example.com -Zone example.com -Record homelab
