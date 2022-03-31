@@ -9,6 +9,7 @@ This should be setup as a scheduled task. I set mine for 5 minutes.
 ### Install
 	mkdir "$($Env:PSModulePath -split ';' | Select-Object -first 2 | Select-Object -Last 1)\CloudFlareDynDns"
 	wget "https://raw.githubusercontent.com/caothu159/modules/master/CloudFlareDynDns/CloudFlareDynDns.psm1" -UseBasicParsing -OutFile "$($Env:PSModulePath -split ';' | Select-Object -first 2 | Select-Object -Last 1)\CloudFlareDynDns\CloudFlareDynDns.psm1"
+	Import-Module "$($Env:PSModulePath -split ';' | Select-Object -first 2 | Select-Object -Last 1)\CloudFlareDynDns\CloudFlareDynDns.psm1"
 
 Examples
 -----
